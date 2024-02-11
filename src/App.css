@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .topnavbarparent{
   display: flex;
   margin-left: 7vh;
@@ -72,6 +75,7 @@ b {
 }
 .tourpackage div{
   width: 55vh;
+  height: 40vh;
   margin: 2vh;
   background: #FAF7F7;
   padding-bottom: 20px;
@@ -84,6 +88,7 @@ b {
 }
 .tourpackage div:hover{
   box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
 }
 .tourpackage div p{
   text-align: center;
@@ -106,4 +111,194 @@ b {
 }
 .tourpackageh2 > div:hover{
   box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+.tourpackageh2 > div div{
+  text-align: center;
+}
+.tourpackageh2 > div p{
+  text-align: center;
+}
+.footerparent{
+
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(234, 231, 231);
+}
+.footerheading{
+  font-size: larger;
+  font-weight: 900;
+  color: #bf000c;
+}
+.addressfooter1{
+  color: #bf000c;
+}
+#socialicons{
+  display: flex;
+  gap: 3vh;
+}
+.indiatourismhi{
+  width: 100%;
+  height: 50vh;
+}
+.indiatourism,.tourpackagecmp{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  
+}
+.indiatourism div{
+  width: 49vh;
+  height: 45vh;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 0 6px rgba(0,0,0,.2);
+  padding: 3px;
+}
+.indiatourism img{
+  width: 100%;
+  height: 80%;
+}
+.indiatourism div p{
+  text-align: center;
+
+}
+.indiatourism div:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+/* tour package  */
+.tourpackage{
+  width: 100%;
+  height: 61vh;
+}
+.tourpackagecmp div{
+  width: 49vh;
+  height: 45vh;
+  /* padding-bottom: 20px; */
+  margin-bottom: 15px;
+  box-shadow: 1px 0 6px rgba(0,0,0,.2);
+  padding: 3px;
+}
+.tourpackagecmp div img{
+  width: 100%;
+  height: 85%;
+}
+.tourpackagecmp div p{
+ text-align: center;
+}
+.tourpackagecmp div:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+.placevisitmainimage{
+  height: 59vh;
+  width: 229vh;
+}
+li{
+  list-style-type: none;
+  border-bottom: 1px dotted;
+  padding: 2px 5px;
+  /* padding-right: 5px; */
+}
+.greaterthensymbol{
+  /* height: 2vh; */
+  width: 1vh;
+}
+.placetovisitcontent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+.placetovisitcontent div{
+  width: 49vh;
+  height: 69vh;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 0 6px rgba(0,0,0,.2);
+  padding: 3px;
+  background-color: rgb(247, 243, 243);
+}
+.placetovisitcontent div h3{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #bf000c;
+}
+.placetovisitcontent div img{
+  width: 100%;
+  height: 40vh;
+}
+.placetovisitcontent div:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+.touroffermainimage{
+  width: 229vh;
+  height: 65vh;
+}
+.touroffers{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+.touroffers div{
+  width: 49vh;
+  height: 49vh;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 0 6px rgba(0,0,0,.2);
+  padding: 3px;
+  background-color: rgb(247, 243, 243);
+}
+.touroffers div img{
+  width: 100%;
+  height: 40vh;
+}
+.touroffers div p{
+  text-align: center;
+}
+.touroffers div:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+
+
+/* contactus */
+
+.contactusoffice{
+  display: flex;
+  gap: 3vh;
+}
+.contactusoffice div > div{
+  /* background-color: #bf000c; */
+  /* color: white; */
+  font-size: large;
+  font-weight: 500;
+}
+.contactusdetails{
+  display: flex;
+  justify-content: space-between;
+}
+.paypalimg{
+  width: 50vh;
+  height: 30vh;
+}
+.followustext{
+  font-size: larger;
+  font-weight: 500;
+}
+.tourism{
+  font-size: larger;
+  font-weight: 500;
 }
