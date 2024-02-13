@@ -1,4 +1,6 @@
 import React from 'react'
+import Loginregister from './Loginregister'
+
 
 const Topnavbar = () => {
   return (
@@ -8,7 +10,8 @@ const Topnavbar = () => {
         <img src='https://www.theindiatourism.com/images/logo.webp' alt='indiatourism'/>
         <img src='https://www.theindiatourism.com/images/atithi-devo-bhava.webp' alt='indiatourism'/>
         </div>
-        <div className=''>
+        <div><Loginregister/></div>
+        <div>
             <div>
                 <a href="mailto:info@theindiatourism.com">Email : info@theindiatourism.com</a>
             </div>

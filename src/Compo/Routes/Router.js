@@ -6,6 +6,8 @@ import TourPackages from './TourPackages';
 import PlacetoVisit from './PlacetoVisit';
 import TourOffers from './TourOffers';
 import ContactUs from './ContactUs';
+import Login from './Login';
+import Register from './Register';
 
 const RouterCompo = () => {
   return (
@@ -28,6 +30,8 @@ const RouterCompo = () => {
         <Route path='/placetovisits' element={<PlacetoVisit/>}/>
         <Route path='/touroffers' element={<TourOffers/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
 
     </Routes>
   
