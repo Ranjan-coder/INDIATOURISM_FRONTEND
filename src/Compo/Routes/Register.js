@@ -40,13 +40,16 @@ const Register = () => {
 
     return (
         <>
-            <div className='registerdetails registerdetails1'>
-                <div>REGISTER DETAILS</div>
+            <div className='registerdetails'>
+            <div className='childregister'>
+                <div className='userdetails'>REGISTER DETAILS</div>
                 <div>Name : <input className='inputfield' type='text' value={firstname} name='name' placeholder='Enter your name(10)' maxLength={10} onChange={(e) => setName(e.target.value)} required /></div>
                 <div>Email : <input className='inputfield' type='email' value={email} name='email' placeholder='Enter your email' onChange={(e) => setEmail(e.target.value)} required /></div>
                 <div>Password : <input type='password' className='inputfield' value={password} name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} required /></div>
                 <button className='submit' onClick={handleRegister}>REGISTER</button>
+                <div className='account'>Don't have an account ? Register here</div>
                 <ToastContainer />
+                </div>
             </div>
         </>
     );

@@ -31,8 +31,8 @@ const Loginregister = () => {
             {showOptions && (
                 <div className='showbutton'>
                 {/* Your login/register options here */}
-                <button onClick={handleLogin} >Login</button>
-                <button onClick={handleRegister}>Register</button>
+                <button onClick={handleLogin}  className='loginregisterbutton'>Login</button>
+                <button onClick={handleRegister} className='loginregisterbutton'>Register</button>
             </div>
             )}
         </div>

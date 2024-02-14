@@ -6,10 +6,16 @@ body {
 }
 .topnavbarparent{
   display: flex;
-  margin-left: 7vh;
-  margin-right: 7vh;
+  /* margin-left: 7vh;
+  margin-right: 7vh; */
   justify-content: space-between;
   align-items: center;
+  padding: 2vh;
+  /* gap: 15px; */
+}
+.topnavbarparentimg{
+  display: flex;
+  gap: 5vh;
 }
 a{
   text-decoration: none;
@@ -27,7 +33,7 @@ a{
 .navtext{
   color: white;
   border-right: 1px solid black;
-  height: 7vh;
+  height: 6.5vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,7 +129,6 @@ b {
   text-align: center;
 }
 .footerparent{
-
   height: 30vh;
   display: flex;
   align-items: center;
@@ -134,6 +139,10 @@ b {
   font-size: larger;
   font-weight: 900;
   color: #bf000c;
+}
+.icon2{
+  height: 5vh;
+  width: 5vh;
 }
 .addressfooter1{
   color: #bf000c;
@@ -152,7 +161,6 @@ b {
   align-items: center;
   justify-content: center;
   gap: 3vh;
-  
 }
 .indiatourism div{
   width: 49vh;
@@ -309,4 +317,65 @@ li{
   position: absolute;
   display: flex;
   flex-direction: column;
+}
+.loginregisterbutton{
+  height: 5vh;
+  width: 15vh;
+}
+
+/* register  */
+.registerdetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userdetails{
+  font-size: larger;
+  font-weight: 900;
+}
+input{
+  border-radius: 5px;
+  height: 5vh;
+  border: none;
+}
+.submit{
+  width: 20vh;
+  height: 5vh;
+  /* border-radius: 10px; */
+  /* background-image: linear-gradient(145deg, rgb(246, 136, 136), rgb(156, 237, 187), rgb(204, 137, 240)); */
+  /* border: none; */
+}
+.childregister{
+  /* box-shadow: 0px 0px 8px blue; */
+  box-shadow: 0px 0px 8px #27cff1;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: 65vh;
+  width: 65vh;
+  text-align: center;
+  line-height: 9vh;
+  border-radius: 10px;
+  background-image: linear-gradient(145deg, rgb(172, 234, 243), rgb(237, 156, 229), rgb(224, 240, 137));  /* rgb(137, 240, 173) rgb(224, 240, 137)) */
+}
+.account{
+  color: white;
+}
+button{
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(145deg, rgb(172, 234, 243), rgb(237, 156, 229), rgb(172, 240, 196));  
+}
+.dynmimgcontent{
+  height: 50vh;
+  width: 226.2vh;
+}
+.dynmtourpkg div{
+  height: 49vh;
+}
+.dynmtourpkg div img{
+  height: 30vh;
+}
+.dynmtourpkg div :nth-child(3){
+  color: gray;
 }

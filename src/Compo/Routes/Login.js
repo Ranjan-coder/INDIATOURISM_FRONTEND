@@ -49,13 +49,16 @@ const Login = () => {
     }
 
   return (
-    <div className='logindetails'>
-    {/* <div>LOGIN DETAILS</div> */}
+    <div className='registerdetails'>
+        <div className='childregister'>
+    <div className='userdetails'>LOGIN DETAILS</div>
     <div>Name : <input className='inputfield' type='text' value={firstname} name='firstname' placeholder='Enter your name(10)' maxLength={10} required onChange={(e)=>setFirstname(e.target.value)}/></div>
     <div>Email : <input className='inputfield' type='email' value={email} name='email' placeholder='Enter your email' required onChange={(e)=>setEmail(e.target.value)}/></div>
     <div>Password : <input type='password' className='inputfield' name='password' value={password} placeholder='Enter your password' required onChange={(e)=>setPassword(e.target.value)}/></div>
     <button className='submit' onClick={handleLogin}>SUBMIT</button>
+    <div className='account'>Don't have an account ? Register here</div>
     <ToastContainer />
+    </div>
     </div>
   )
 }

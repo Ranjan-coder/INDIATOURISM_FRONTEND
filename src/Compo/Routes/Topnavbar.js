@@ -6,7 +6,7 @@ const Topnavbar = () => {
   return (
     <>
     <div className='topnavbarparent'>
-        <div>
+        <div className='topnavbarparentimg'>
         <img src='https://www.theindiatourism.com/images/logo.webp' alt='indiatourism'/>
         <img src='https://www.theindiatourism.com/images/atithi-devo-bhava.webp' alt='indiatourism'/>
         </div>

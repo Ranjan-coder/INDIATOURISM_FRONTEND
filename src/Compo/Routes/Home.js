@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 const Home = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div><img className='homemainimage' src='https://www.theindiatourism.com/images/tourism-india.webp' alt='indiatourism' /></div>
@@ -27,26 +29,24 @@ const Home = () => {
         <div className="col-sm-12">
           <h2 className='headingtext'>Find your Ideal Tour Packages</h2>
           <p>
-
-            Travel in India is like nothing you’ve ever experienced, from the magnificence Taj Mahal to the highlights of Kerala, Goa and India, this is a great trip for first-time visitors as it encompasses all of the major tourist destinations.
-
+            Travel in India is like nothing you've ever experienced, from the magnificence Taj Mahal to the highlights of Kerala, Goa and India, this is a great trip for first-time visitors as it encompasses all of the major tourist destinations.
           </p>
         </div>
 
         <div className='tourpackage'>
-          <div>
+          <div onClick={()=>navigate('/goldentriangletour')}>
             <img src='https://www.theindiatourism.com/images/Golden-Triangle-package.webp' alt='golden triangle tour' />
             <p>Golden Triangle Tour</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/rajasthantour')}>
             <img src='https://www.theindiatourism.com/images/rajasthanpackages.webp' alt='rajasthan' />
             <p>Rajasthan</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/kerlatour')}>
             <img src='https://www.theindiatourism.com/images/keralatour.webp' alt='kerala' />
             <p>Kerala</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/goatour')}>
             <img src='https://www.theindiatourism.com/images/Goatour.webp' alt='goa' />
             <p>Goa</p>
           </div>
@@ -59,12 +59,12 @@ const Home = () => {
         </p>
 
         <div className='tourpackageh2'>
-          <div>
+          <div onClick={()=>navigate('/kerlatourism')}>
             <img src='https://www.theindiatourism.com/images/Kerala.webp' alt='holidaydestination' />
             <div>Kerala</div>
             <p>Houseboat</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/agra')}>
             <img src='https://www.theindiatourism.com/images/taj-mahal-tour.webp' alt='holidaydestination' />
             <div>Agra</div>
             <p>Taj Mahal</p>

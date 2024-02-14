@@ -8,6 +8,12 @@ import TourOffers from './TourOffers';
 import ContactUs from './ContactUs';
 import Login from './Login';
 import Register from './Register';
+import GoldenTriangleTourindia from './GoldenTriangleTourindia';
+import RajasthanTourPackage from './RajasthanTourPackage';
+import KerlaTour from './KerlaTour';
+import GoaTour from './GoaTour';
+import KeralaTourism from './KeralaTourism';
+import Agra from './Agra';
 
 const RouterCompo = () => {
   return (
@@ -32,6 +38,13 @@ const RouterCompo = () => {
         <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/goldentriangletour' element={<GoldenTriangleTourindia/>}/>
+        <Route path='/rajasthantour' element={<RajasthanTourPackage/>}/>
+        <Route path='/kerlatour' element={<KerlaTour/>}/>
+        <Route path='/goatour' element={<GoaTour/>}/>
+        <Route path='/kerlatourism' element={<KeralaTourism/>}/>
+        <Route path='/agra' element={<Agra/>}/>
+        
 
     </Routes>
   
