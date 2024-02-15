@@ -69,12 +69,12 @@ const Home = () => {
             <div>Agra</div>
             <p>Taj Mahal</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/varanasitourism')}>
             <img src='https://www.theindiatourism.com/images/varanasi-tour.webp' alt='holidaydestination' />
             <div>Varanasi</div>
             <p>Ganga Aarati</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/khajurahotourism')}>
             <img src='https://www.theindiatourism.com/images/Khajuraho-tours.webp' alt='holidaydestination' />
             <div>Khajuraho</div>
             <p>Mountains</p>
@@ -88,19 +88,19 @@ const Home = () => {
         </div>
 
         <div className='tourpackage'>
-          <div>
+          <div onClick={()=>navigate('/honeymoontour')}>
             <img src='https://www.theindiatourism.com/images/indiaHoneymoonTours.webp' alt='golden triangle tour' />
             <p>Honeymoon Tours</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/familytour')}>
             <img src='https://www.theindiatourism.com/images/FamilyHolidays.webp' alt='rajasthan' />
             <p>Family Holidays</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/summerholidays')}>
             <img src='https://www.theindiatourism.com/images/SummerHolidays.webp' alt='kerala' />
             <p>Summer Holidays</p>
           </div>
-          <div>
+          <div onClick={()=>navigate('/pilgrimagetour')}>
             <img src='https://www.theindiatourism.com/images/PilgrimageTours.webp' alt='goa' />
             <p>Pilgrimage Tours</p>
           </div>

@@ -14,6 +14,16 @@ import KerlaTour from './KerlaTour';
 import GoaTour from './GoaTour';
 import KeralaTourism from './KeralaTourism';
 import Agra from './Agra';
+import VaranasiTourism from './VaranasiTourism';
+import KhajurahoTourism from './KhajurahoTourism';
+import HoneymoonTour from './HoneymoonTour';
+import FamilyTour from './FamilyTour';
+import SummerHolidays from './SummerHolidays';
+import PilgrimageTour from './PilgrimageTour';
+import AndhraPradesh from './AndhraPradesh';
+import ArunachalPradesh from './ArunachalPradesh';
+import AsamTourism from './AsamTourism';
+import BiharTour from './BiharTour';
 
 const RouterCompo = () => {
   return (
@@ -44,6 +54,17 @@ const RouterCompo = () => {
         <Route path='/goatour' element={<GoaTour/>}/>
         <Route path='/kerlatourism' element={<KeralaTourism/>}/>
         <Route path='/agra' element={<Agra/>}/>
+        <Route path='/varanasitourism' element={<VaranasiTourism/>}/>
+        <Route path='/khajurahotourism' element={<KhajurahoTourism/>}/>
+        <Route path='/honeymoontour' element={<HoneymoonTour/>}/>
+        <Route path='/familytour' element={<FamilyTour/>}/>
+        <Route path='/summerholidays' element={<SummerHolidays/>}/>
+        <Route path='/pilgrimagetour' element={<PilgrimageTour/>}/>
+        <Route path='/andhrapradeshtourism' element={<AndhraPradesh/>}/>
+        <Route path='/arunchalapradeshtourism' element={<ArunachalPradesh/>}/>
+        <Route path='/asamtourism' element={<AsamTourism/>}/>
+        <Route path='/bihartourism' element={<BiharTour/>}/>
+        
         
 
     </Routes>
