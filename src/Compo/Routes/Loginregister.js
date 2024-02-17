@@ -26,7 +26,7 @@ const Loginregister = () => {
     }
 
     return (
-        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='icon2' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <FontAwesomeIcon className='icon2' icon={faCircleUser} />
             {showOptions && (
                 <div className='showbutton'>

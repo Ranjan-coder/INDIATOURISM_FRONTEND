@@ -9,17 +9,17 @@ const Footer = () => {
   return (
     <>
       <div>
-        <div className='navlink'>
-          <NavLink className='navtext' to='/'>HOME</NavLink>
-          <NavLink className='navtext' to='/indiatourism'>INDIA TOURISM</NavLink>
-          <NavLink className='navtext' to='/tourpackages'>TOUR PACKAGES</NavLink>
-          <NavLink className='navtext' to='/placetovisits'>PLACE TO VISITS</NavLink>
-          <NavLink className='navtext' to='/touroffers'>TOUR OFFERS</NavLink>
-          <NavLink className='navtext' to='/contactus'>CONTACT US</NavLink>
+        <div className='navlink1'>
+          <NavLink className='navtext2' to='/'>Contact Us</NavLink>
+          <NavLink className='navtext2' to='/#'>Sitemap</NavLink>
+          <NavLink className='navtext2' to='/#'>sitemap xml</NavLink>
+          <NavLink className='navtext2' to='/#'>Payment Procedure</NavLink>
+          <NavLink className='navtext2' to='/#'>Terms &amp; Condition</NavLink>
+          <NavLink className='navtext2' to='/#'>Link exchange</NavLink>
           {/* <NavLink><img className='tripadvisior' src='https://www.theindiatourism.com/images/callBack.webp' alt='tripadvisior'/></NavLink> */}
         </div>
         <div className='footerparent'>
-          <div>
+          <div className='footerchild1'>
           
           <div className="mainfooter">
             <div className="footerheading">The India Tourism</div>
@@ -49,8 +49,10 @@ const Footer = () => {
             </a>
           </div>
           </div>
-          <div className='ftrimg'><img src='https://www.theindiatourism.com/images/India-tour-footer.webp' alt='footerimg' /></div>
+          <div ><img className='ftrimg' src='https://www.theindiatourism.com/images/India-tour-footer.webp' alt='footerimg' /></div>
+          <div>©️ The India Tourism</div>
         </div>
+        
       </div>
     </>
   )

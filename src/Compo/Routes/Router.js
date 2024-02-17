@@ -24,6 +24,12 @@ import AndhraPradesh from './AndhraPradesh';
 import ArunachalPradesh from './ArunachalPradesh';
 import AsamTourism from './AsamTourism';
 import BiharTour from './BiharTour';
+import GoaTourism from './GoaTourism';
+import OdishaTourism from './OdishaTourism';
+import BeachHolidays from './BeachHolidays';
+import GoldenTriangle from './GoldenTriangle';
+import HillstationHoliday from './HillstationHoliday';
+import HamburgerMenu from './HamburgerMenu';
 
 const RouterCompo = () => {
   return (
@@ -37,6 +43,7 @@ const RouterCompo = () => {
     <NavLink className='navtext' to='/contactus'>CONTACT US</NavLink>
     <NavLink><img className='tripadvisior' src='https://www.theindiatourism.com/images/callBack.webp' alt='tripadvisior'/></NavLink>
     </div>
+    <HamburgerMenu/>
 
 
     <Routes>
@@ -64,6 +71,11 @@ const RouterCompo = () => {
         <Route path='/arunchalapradeshtourism' element={<ArunachalPradesh/>}/>
         <Route path='/asamtourism' element={<AsamTourism/>}/>
         <Route path='/bihartourism' element={<BiharTour/>}/>
+        <Route path='/goatourism' element={<GoaTourism/>}/>
+        <Route path='/odishatourism' element={<OdishaTourism/>}/>
+        <Route path='/beachholiday' element={<BeachHolidays/>}/>
+        <Route path='/goldentriangle' element={<GoldenTriangle/>}/>
+        <Route path='/hillstationholiday' element={<HillstationHoliday/>}/>
         
         
 

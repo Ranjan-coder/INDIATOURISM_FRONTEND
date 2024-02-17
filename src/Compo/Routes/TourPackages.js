@@ -1,6 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
+
 
 const TourPackages = () => {
+
+  const navigate = useNavigate()
+  
+  useEffect(() => {
+    const jwtToken = localStorage.getItem('jwtToken');
+    if (!jwtToken) {
+      navigate('/login');
+    } else {
+      axios
+        .get('http://localhost:5555/user/tourpackage', {
+          headers: {
+            authorization: `Bearer ${jwtToken}`,
+          },
+        })
+        .then((res) => {
+          console.log(res.data); 
+          // alert(responseData.msg);
+        });
+    }
+  }, [navigate]);
+
   return (
     <>
     <div><img className='tourpackage' src='https://i.pinimg.com/564x/cf/b2/1c/cfb21c31744c458a7b4f8eb8181e15f9.jpg' alt='indiatourism'/></div>

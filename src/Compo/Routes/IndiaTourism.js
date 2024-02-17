@@ -38,11 +38,11 @@ const IndiaTourism = () => {
           <img className='indiatourismimg' src='https://i.pinimg.com/564x/e1/d2/59/e1d259f38b7418395454acbec8981dfb.jpg' alt='goa' />
           <p>Bihar Tourism</p>
         </div>
-        <div className='tourpackagechildcmp'>
+        <div className='tourpackagechildcmp' onClick={()=>navigate('/goatourism')}>
           <img className='indiatourismimg' src='https://i.pinimg.com/564x/2a/20/d1/2a20d147aab2a7afa7ed29562fe571da.jpg' alt='kerala' />
           <p>Goa Tourism</p>
         </div>
-        <div className='tourpackagechildcmp'>
+        <div className='tourpackagechildcmp' onClick={()=>navigate('/odishatourism')}>
           <img className='indiatourismimg' src='https://i.pinimg.com/564x/c5/78/82/c57882660dd200e635def365ae03bd7a.jpg' alt='goa' />
           <p>Odisha Tourism</p>
         </div>

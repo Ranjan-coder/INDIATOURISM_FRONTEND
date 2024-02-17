@@ -13,12 +13,12 @@ const ContactUs = () => {
           <div>
             <div>
               <div className='tourism'>The India Tourism :</div>
-              <div>Prakash Singh Shekhawat</div>
-              <div><a href="https://wa.me/9549279999" target="_blank" rel="noopener noreferrer">
+              <div className='tourism1'>Prakash Singh Shekhawat</div>
+              <div className='tourism1'><a href="https://wa.me/9549279999" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} />+91 - 9549279999
               </a>
-                <div>Office Hours : (9:30 am to 5:30 pm)</div>
-                <div><a className="addressfooter1" href="mailto:info@theindiatourism.com"> Email - info@theindiatourism.com</a></div>
+                <div className='tourism1'>Office Hours : (9:30 am to 5:30 pm)</div>
+                <div className='tourism1'><a className="addressfooter1" href="mailto:info@theindiatourism.com"> Email - info@theindiatourism.com</a></div>
               </div>
             </div>
           </div>

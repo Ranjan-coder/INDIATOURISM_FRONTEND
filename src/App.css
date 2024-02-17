@@ -6,6 +6,9 @@
 body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
+.hamburger-menu,.menu{
+  display: none;
+}
 .topnavbarparent{
   display: flex;
   /* margin-left: 7vh;
@@ -30,7 +33,16 @@ a{
   /* text-align: center; */
   align-items: center;
   justify-content: space-around;
-  
+}
+.navlink1{
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  background: #3e3b3b;
+  gap: 10vh;
+  align-items: center;
+
 }
 .navtext{
   color: white;
@@ -41,6 +53,18 @@ a{
   justify-content: space-around;
   width: 39vh;
   font-weight: 500;
+}
+.navtext2{
+  color: white;
+  border-right: 1px solid rgba(251, 248, 248, 0.975);
+  padding: 1vh;
+  /* height: 6vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* width: 35vh; */
+  text-align: center;
+  /* font-weight: 900; */
 }
 .navtext:hover{
   background-color: #fff;
@@ -85,6 +109,8 @@ b {
 }
 .tourpackage{
   display: flex;
+  width: 100%;
+  /* height: 61vh; */
 }
 .tourpackage div{
   width: 55vh;
@@ -147,6 +173,7 @@ b {
 .icon2{
   height: 5vh;
   width: 5vh;
+  color: rgb(19, 182, 247);
 }
 .addressfooter1{
   color: #bf000c;
@@ -188,10 +215,6 @@ b {
 }
 
 /* tour package  */
-.tourpackage{
-  width: 100%;
-  height: 61vh;
-}
 .tourpackagecmp div{
   width: 49vh;
   height: 45vh;
@@ -363,6 +386,7 @@ input{
 }
 .account{
   color: white;
+  cursor: pointer;
 }
 button{
   border: none;
@@ -388,3 +412,267 @@ button{
   color: gray;
 }
 
+
+
+/* mediaquery  */
+
+
+@media screen and (max-width:765px) and (min-width: 373px) {
+  .hamburger-menu,.menu{
+    display: block;
+  }
+  .maincontent {
+    padding: 1vh 1vh;
+  }
+  .navlink{
+    display: none;
+  }
+  .topnavbarparent{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .topnavbarparentimg{
+    flex-direction: column;
+    width: 100%;
+    gap: 3vh;
+  }
+  .tourpackage{
+    flex-direction: column;
+  }
+  .tourpackageh2{
+    flex-direction: column;
+  }
+  .ftrimg{
+    width: 100%;
+    padding: 15px;
+  }
+  .footerparent{
+    flex-direction: column;
+    justify-content: center;
+  }
+  p{
+    padding: 1vh;
+  }
+  .tourpackage div{
+    margin: 0;
+    width: 100%;
+    height: 42vh;
+  }
+  .menu{
+    margin-top: 1vh;
+  }
+  .navtext1 {
+    color: white;
+    background-color: #fcb8b8;
+    height: 6.5vh;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+  }
+  .footerchild1,.mainfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .childregister{
+    margin: 3vh;
+  }
+  .placevisitmainimage,.touroffermainimage {
+    width: 100%;
+  }
+  .placetovisitcontent div{
+    height: 62vh;
+  }
+  .contactusdetails{
+    flex-direction: column;
+    padding: 3vh;
+  }
+  .paypalimg {
+    width: 33%;
+    height: 50%;
+}
+#socialicons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+.contactusoffice{
+  flex-direction: column;
+}
+.headingtext{
+  font-size: x-large;
+}
+/* .svg-inline--fa{
+  height: 2em;
+} */
+.menuicon{
+  position: absolute;
+  top: 2vh;
+  right: 3vh;
+  height: 5vh;
+}
+.navlink1{
+  gap: 1vh;
+  flex-wrap: wrap;
+
+}
+
+}
+
+
+
+/* tab query  */
+
+
+@media screen and (max-width:1000px) and (min-width: 765px) {
+  .hamburger-menu,.menu{
+    display: block;
+  }
+  .maincontent {
+    padding: 1vh 1vh;
+  }
+  .navlink{
+    display: none;
+  }
+  .topnavbarparent{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .topnavbarparentimg{
+    flex-direction: column;
+    width: 100%;
+    gap: 3vh;
+  }
+  .tourpackage{
+    flex-direction: column;
+  }
+  .tourpackageh2{
+    flex-direction: column;
+  }
+  .ftrimg{
+    width: 100%;
+    padding: 15px;
+  }
+  .footerparent{
+    flex-direction: column;
+    justify-content: center;
+  }
+  p{
+    padding: 1vh;
+    font-size: larger;
+  }
+  .tourpackage div{
+    margin: 0;
+    width: 100%;
+    height: 55vh;
+  }
+  .tourpackage div p {
+    font-size: x-large;
+}
+.tourpackageh2 > div {
+  width: 95%;
+}
+.tourpackageh2 > div div {
+  font-size: x-large;
+}
+
+
+  /* navbar */
+
+
+  .menu{
+    margin-top: 1vh;
+  }
+
+
+
+  .navtext1 {
+    color: rgb(241, 12, 12);
+    background-color: #b8fcc2;
+    height: 6.5vh;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 1vh;
+  }
+  .navtext1:hover {
+    color: rgb(241, 12, 12);
+    background-color: #fff;
+  }
+  .footerchild1,.mainfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .childregister{
+    margin: 3vh;
+  }
+  .placevisitmainimage,.touroffermainimage {
+    width: 100%;
+  }
+  .placetovisitcontent div{
+    /* height: 62vh; */
+    height: 54vh;
+    
+  }
+  .contactusdetails{
+    flex-direction: column;
+    padding: 3vh;
+  }
+  .paypalimg {
+    width: 33%;
+    height: 50%;
+}
+#socialicons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+.contactusoffice{
+  flex-direction: column;
+}
+.headingtext{
+  font-size: x-large;
+}
+/* .svg-inline--fa{
+  height: 2em;
+} */
+.menuicon{
+  position: absolute;
+  top: 2vh;
+  right: 3vh;
+  height: 5vh;
+}
+.navlink1{
+  gap: 1vh;
+  flex-wrap: wrap;
+
+}
+.dynmtourpkg div {
+  height: 43vh;
+  width: 65vh;
+}
+.touroffers div {
+  width: 65vh;
+}
+.touroffers div p {
+  font-size: x-large;
+}
+.tourism {
+  font-size: xx-large;
+}
+.tourism1 {
+  font-size: larger;
+}
+.followustext {
+  font-size: x-large;
+}
+.contactusoffice div > div {
+  font-size: x-large;
+}
+
+}
