@@ -6,23 +6,23 @@ const TourOffers = () => {
 
   const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   const jwtToken = localStorage.getItem('jwtToken');
-  //   if (!jwtToken) {
-  //     navigate('/login');
-  //   } else {
-  //     axios
-  //       .get('http://localhost:5555/user/touroffer', {
-  //         headers: {
-  //           authorization: `Bearer ${jwtToken}`,
-  //         },
-  //       })
-  //       .then((res) => {
-  //         console.log(res.data); 
-  //         // alert(responseData.msg);
-  //       });
-  //   }
-  // }, [navigate]);
+  useEffect(() => {
+    const jwtToken = localStorage.getItem('jwtToken');
+    if (!jwtToken) {
+      navigate('/login');
+    } else {
+      axios
+        .get('http://localhost:5555/user/touroffer', {
+          headers: {
+            authorization: `Bearer ${jwtToken}`,
+          },
+        })
+        .then((res) => {
+          console.log(res.data); 
+          // alert(responseData.msg);
+        });
+    }
+  }, [navigate]);
 
   return (
     <>

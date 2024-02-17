@@ -2,7 +2,9 @@ import React from 'react'
 import Loginregister from './Loginregister'
 
 
+
 const Topnavbar = () => {
+
   return (
     <>
     <div className='topnavbarparent'>

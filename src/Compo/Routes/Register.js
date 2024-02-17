@@ -47,7 +47,7 @@ const Register = () => {
                 <div>Email : <input className='inputfield' type='email' value={email} name='email' placeholder='Enter your email' onChange={(e) => setEmail(e.target.value)} required /></div>
                 <div>Password : <input type='password' className='inputfield' value={password} name='password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} required /></div>
                 <button className='submit' onClick={handleRegister}>REGISTER</button>
-                <div className='account' onClick={()=>navigate('/register')}>Don't have an account ? Register here</div>
+                <div className='account' onClick={()=>navigate('/login')}>Already have an account ? Login here</div>
                 <ToastContainer />
                 </div>
             </div>
