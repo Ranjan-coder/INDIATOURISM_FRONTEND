@@ -18,7 +18,7 @@ const Register = () => {
 
     const handleRegister = async () => { 
         try {
-            const response = await axios.post('http://localhost:5555/user/register', {
+            const response = await axios.post('https://ecommercebackend-ptf5.onrender.com/pages/log/register', {
                 firstname: firstname,
                 email: email,
                 password: password

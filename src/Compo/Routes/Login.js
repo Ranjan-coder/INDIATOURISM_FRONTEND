@@ -20,7 +20,7 @@ const Login = () => {
     const handleLogin= async ()=>{
         try{
             // const response = 
-            await axios.post('http://localhost:5555/user/login',{
+            await axios.post('https://ecommercebackend-ptf5.onrender.com/pages/log/login',{
                 firstname:firstname,
                 email:email,
                 password:password

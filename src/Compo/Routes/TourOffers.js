@@ -12,7 +12,7 @@ const TourOffers = () => {
       navigate('/login');
     } else {
       axios
-        .get('http://localhost:5555/user/touroffer', {
+        .get('https://ecommercebackend-ptf5.onrender.com/pages/log/touroffer', {
           headers: {
             authorization: `Bearer ${jwtToken}`,
           },
